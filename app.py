@@ -3,6 +3,6 @@ from flask import Flask, render_template as rt
 app = Flask(__name__)
 
 
-@app.get("/fizzbuzz")
+@app.route("/")
 def get_fizzbuzz():
-    return rt("fizzbuzz.html")
+    return rt("index.html")
